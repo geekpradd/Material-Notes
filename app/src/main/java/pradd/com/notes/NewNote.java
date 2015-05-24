@@ -118,6 +118,7 @@ public class NewNote extends ActionBarActivity implements AmbilWarnaDialog.OnAmb
     public void submitNote(){
         Log.i("Success?","Called");
         ext = (EditText) findViewById(R.id.editText);
+        customEditor.clearComposingText();
         String text = customEditor.getTextHTML();
         String title = String.valueOf(ext.getText());
         Intent back = new Intent();

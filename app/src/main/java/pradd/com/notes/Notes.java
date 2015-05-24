@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * Created by Pradipta on 18-04-2015.
  */
 public class Notes extends SugarRecord<Notes>{
-    String title;
+    String title; //For Code Maintaince, keep this
     String content;
 
     public Notes(){

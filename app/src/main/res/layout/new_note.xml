@@ -3,13 +3,14 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="0dp"
         android:hint="Note Name"
         android:padding="5dp"
         android:background="@drawable/underline"
         android:id="@+id/editText"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
     <ScrollView
         android:id="@+id/scrollViewEditor"
         android:layout_width="match_parent"
@@ -18,7 +19,10 @@
         android:layout_below="@+id/editText">
     <RichTextEditor.CustomEditText.CustomEditText xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/editor"
-        android:padding="5dp"
+
+        android:padding="8dp"
+        android:hint="Enter Note here"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/underline"
