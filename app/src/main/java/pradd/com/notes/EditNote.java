@@ -118,6 +118,7 @@ public class EditNote extends ActionBarActivity implements AmbilWarnaDialog.OnAm
         if (id == R.id.done){
             Notes n = Notes.findById(Notes.class, (long) itemID);
             n.title = ex.getText().toString();
+            customEditor.clearComposingText();
             n.content = customEditor.getTextHTML();
             n.save();
 
